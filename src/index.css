@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  --clr-light-cyan: hsl(193, 38%, 86%);
+  --clr-neon-green: hsl(150, 100%, 66%);
+  --clr-grayish-blue: hsl(217, 19%, 38%);
+  --clr-dark-grayish-blue: hsl(217, 19%, 24%);
+  --clr-dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-light-cyan);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.advice-card {
+  background-color: var(--clr-dark-grayish-blue);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 500px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.divider {
+  width: 90%;
+  margin-block: 2rem;
+}
+
+.advice-id {
+  color: var(--clr-neon-green);
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.advice-text::before {
+  content: open-quote;
+}
+
+.advice-text::after {
+  content: close-quote;
+}
+
+.dice-btn {
+  background-color: var(--clr-neon-green);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: -2rem;
+}
+
+.dice-btn:hover,
+.dice-btn:focus {
+  box-shadow: 0 0 20px var(--clr-neon-green);
+}
+
+@media screen and (max-width: 600px) {
+  .advice-card {
+    width: 70%;
+  }
+}
