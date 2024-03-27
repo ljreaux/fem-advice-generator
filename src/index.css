@@ -57,11 +57,11 @@ body {
 .dice-btn {
   background-color: var(--clr-neon-green);
   border: none;
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  bottom: -2rem;
+  bottom: -2.5rem;
 }
 
 .dice-btn:hover,
